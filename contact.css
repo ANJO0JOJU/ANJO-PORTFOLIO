@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 50px;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  gap: 30px;
+}
+.nav-r1 {
+  display: none;
+}
+.nav-r2 {
+  display: none;
+}
+.nav-r3 {
+  display: none;
+}
+.navbar p {
+  font-family: "Bruno Ace SC", sans-serif;
+}
+/* .right p {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    transition: 1s all;
+    cursor: pointer;
+  } */
+.right p:hover {
+  cursor: pointer;
+  transition: 200ms all;
+  border-bottom: 2px solid #000000 !important;
+}
+.menu-icon {
+  font-size: 20px;
+}
+.sidebar {
+  position: absolute;
+  width: 50%;
+  height: 212vh;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 5px 10px black;
+  z-index: 1;
+  margin-left: -500px;
+  transition: all 600ms;
+}
+.close-icon {
+  font-size: 20px;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.side-home {
+  text-decoration: none;
+  color: black;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.side-uiux {
+  text-decoration: none;
+  color: black;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.side-contact {
+  text-decoration: none;
+  color: black;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+  /* text-decoration: underline !important; */
+}
+.container3 {
+  position: relative;
+}
+.contact-prof {
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}
+.contact-name {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 210px;
+  margin-top: -120px;
+}
+.contact-uiux {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-top: 10px;
+  margin-left: 210px;
+}
+.whatsapp {
+  height: 50px;
+  width: 50px;
+  margin-top: 90px;
+  margin-left: 20px;
+}
+.number-text {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 90px;
+  margin-top: -50px;
+}
+.number {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 90px;
+  margin-top: 05px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.google {
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.google-text {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 90px;
+  margin-top: -50px;
+}
+.email {
+  font-family: "Amiko", sans-serif;
+  margin-left: 90px;
+  margin-top: 05px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.drib-beha {
+  margin-top: 30px;
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+.beh-img {
+  height: 60px;
+  width: 60px;
+}
+.beh-text {
+  margin-top: 5px;
+}
+.drib-img {
+  height: 60px;
+  width: 60px;
+}
+.drib-text {
+  margin-top: 5px;
+}
+.drible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.behance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .nav-r1 {
+    display: block;
+  }
+  .nav-r2 {
+    display: block;
+  }
+  .nav-r3 {
+    display: block;
+  }
+  .contact-prof {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 90px;
+  }
+  .contact-name {
+    margin-top: 20px;
+    margin-left: 110px;
+    display: block;
+  }
+  .contact-uiux {
+    margin-left: 110px;
+    display: block;
+  }
+  .whatsapp {
+    margin-left: 700px;
+    position: absolute;
+    top: 100px;
+  }
+  .number-text {
+    position: absolute;
+    /* top: 10px; */
+    margin-left: 770px;
+    margin-top: -275px;
+  }
+  .number {
+    margin-left: 770px;
+    margin-top: -255px;
+  }
+  .google {
+    margin-left: 700px;
+  }
+  .google-text {
+    margin-left: 770px;
+  }
+  .email {
+    margin-left: 770px;
+  }
+  .drib-beha {
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,819 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 50px;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  gap: 30px;
+}
+.nav-r1 {
+  display: none;
+}
+.nav-r2 {
+  display: none;
+}
+.nav-r3 {
+  display: none;
+}
+.navbar p {
+  font-family: "Bruno Ace SC", sans-serif;
+}
+/* .right p {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  transition: 1s all;
+  cursor: pointer;
+} */
+.right p:hover {
+  cursor: pointer;
+  transition: 200ms all;
+  border-bottom: 2px solid #000000 !important;
+}
+.menu-icon {
+  font-size: 20px;
+}
+.sidebar {
+  position: absolute;
+  width: 50%;
+  height: 212vh;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 5px 10px black;
+  z-index: 1;
+  margin-left: -500px;
+  transition: all 600ms;
+}
+.close-icon {
+  font-size: 20px;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.side-home {
+  text-decoration: none;
+  color: black;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.side-uiux {
+  text-decoration: none;
+  color: black;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+  /* text-decoration: underline !important; */
+}
+.side-contact {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.container1 {
+  position: relative;
+}
+.c3-uiux {
+  position: absolute;
+  font-family: "Big Shoulders Inline Display", sans-serif;
+  font-size: 180px;
+  font-weight: 400;
+  padding-top: 0px;
+  left: 20px;
+}
+.c3-works {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 30px;
+  margin-left: 30px;
+  top: 190px;
+}
+.work1-head {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  left: 15px;
+  top: 250px;
+}
+.work1-shead {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  left: 15px;
+  top: 285px;
+  text-decoration: underline;
+}
+.work1-cont {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  top: 315px;
+  left: 15px;
+}
+.work1-mock1 {
+  position: absolute;
+  height: 250px;
+  width: auto;
+  display: flex;
+  top: 400px;
+  left: 25px;
+}
+.clr {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  top: 700px;
+  left: 15px;
+}
+.w1-prim {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 780px;
+  left: 15px;
+}
+.w1-primt {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  top: 750px;
+  left: 15px;
+}
+.w1-sect {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  top: 890px;
+  left: 15px;
+}
+.w1-sec1 {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 920px;
+  left: 15px;
+  border: 0.5px solid black;
+}
+.w1-sec2 {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 920px;
+  left: 130px;
+}
+.login-mock {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Bruno Ace SC", sans-serif;
+  top: 1200px;
+  left: 15px;
+  font-weight: bolder;
+}
+.mock-login {
+  position: absolute;
+  height: 200px;
+  top: 1250px;
+  left: 90px;
+}
+.typography {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  top: 1030px;
+  left: 15px;
+}
+.font1 {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  top: 1070px;
+  left: 15px;
+}
+.font2 {
+  position: absolute;
+  height: 20px;
+  width: auto;
+  top: 1088px;
+  left: 105px;
+}
+.mock-home {
+  position: absolute;
+  height: 200px;
+  top: 1550px;
+  left: 15px;
+}
+.mock-homet {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  top: 1500px;
+  left: 300px;
+}
+.mock-contactt1 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  top: 1800px;
+  left: 15px;
+}
+.mock-contact {
+  position: absolute;
+  height: 200px;
+  left: 130px;
+  top: 1850px;
+}
+.small-figma {
+  position: absolute;
+  height: 40px;
+  left: 15px;
+  top: 2100px;
+}
+.w1-figmafile {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  top: 2110px;
+  left: 70px;
+  cursor: pointer;
+}
+
+/* WORK 2 BD */
+
+.work2-head {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  left: 15px;
+  top: 2250px;
+}
+.work2-shead {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  left: 15px;
+  top: 2285px;
+  text-decoration: underline;
+}
+.work2-cont {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  top: 2315px;
+  left: 15px;
+}
+.work2-mainimg {
+  height: 300px;
+  transform: rotate(23.746deg);
+  margin-top: 2400px;
+  margin-left: 80px;
+}
+.w2-prim {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 2830px;
+  left: 15px;
+}
+.w2-primt {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  top: 2800px;
+  left: 15px;
+}
+.w2-sect {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  top: 2940px;
+  left: 15px;
+}
+.w2-sec1 {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 2970px;
+  left: 15px;
+  border: 0.5px solid black;
+}
+.w2-sec2 {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 2970px;
+  left: 130px;
+}
+.typography2 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  top: 3080px;
+  left: 15px;
+}
+.font12 {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  top: 3130px;
+  left: 15px;
+}
+.font22 {
+  position: absolute;
+  height: 20px;
+  width: auto;
+  top: 3125px;
+  left: 105px;
+}
+.font23 {
+  position: absolute;
+  height: 20px;
+  width: auto;
+  top: 3150px;
+  left: 105px;
+}
+.clr2 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  top: 2755px;
+  left: 15px;
+}
+.login-mock2 {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Bruno Ace SC", sans-serif;
+  top: 1200px;
+  left: 15px;
+  font-weight: bolder;
+}
+.mock-login2 {
+  position: absolute;
+  height: 200px;
+  top: 1250px;
+  left: 90px;
+}
+.mock-home2 {
+  position: absolute;
+  height: 200px;
+  top: 3250px;
+  left: 15px;
+  transform: rotate(23.746deg);
+}
+.mock-homet2 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  top: 3230px;
+  left: 300px;
+}
+.mock-logint2 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  top: 3500px;
+  left: 20px;
+}
+.mock-login2 {
+  position: absolute;
+  height: 200px;
+  left: 230px;
+  top: 3500px;
+}
+.small-figma2 {
+  position: absolute;
+  height: 40px;
+  left: 15px;
+  top: 3900px;
+}
+.w2-figmafile {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  top: 3910px;
+  left: 70px;
+  cursor: pointer;
+}
+.req {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  top: 3720px;
+  left: 15px;
+  font-size: 20px;
+}
+.req-cont {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  top: 3760px;
+  left: 15px;
+}
+
+/* WORK 3 LISTEN UP */
+
+.work3-head {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  left: 15px;
+  top: 4000px;
+}
+.work3-shead {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  left: 15px;
+  top: 4035px;
+  text-decoration: underline;
+}
+.work3-cont {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  top: 4065px;
+  left: 15px;
+}
+.work3-mainimg {
+  position: absolute;
+  height: 300px;
+  transform: rotate(23.746deg);
+  top: 4170px;
+  /* margin-top: 4150px; */
+  margin-left: 80px;
+}
+.w3-prim {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 4600px;
+  left: 15px;
+}
+.w3-primt {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  top: 4570px;
+  left: 15px;
+}
+.w3-sect {
+  position: absolute;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  top: 4710px;
+  left: 15px;
+}
+.w3-sec1 {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 4740px;
+  left: 15px;
+  border: 0.5px solid black;
+}
+
+.typography3 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  top: 4850px;
+  left: 15px;
+}
+.font13 {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  top: 4900px;
+  left: 15px;
+}
+.font33 {
+  position: absolute;
+  height: 20px;
+  width: auto;
+  top: 4915px;
+  left: 105px;
+}
+
+.clr3 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  top: 4520px;
+  left: 15px;
+}
+
+.mock-home3 {
+  position: absolute;
+  height: 200px;
+  top: 5030px;
+  left: 15px;
+  transform: rotate(23.746deg);
+}
+.mock-homet3 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  top: 4980px;
+  left: 300px;
+}
+.mock-profilet3 {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
+  top: 5280px;
+  left: 20px;
+}
+.mock-profile3 {
+  position: absolute;
+  height: 200px;
+  left: 250px;
+  top: 5290px;
+}
+.small-figma3 {
+  position: absolute;
+  height: 40px;
+  left: 15px;
+  top: 5510px;
+}
+.w3-figmafile {
+  position: absolute;
+  font-family: "Bruno Ace SC", sans-serif;
+  top: 5520px;
+  left: 70px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .nav-r1 {
+    display: block;
+  }
+  .nav-r2 {
+    display: block;
+  }
+  .nav-r3 {
+    display: block;
+  }
+  .c3-uiux {
+    font-size: 250px;
+  }
+  .c3-works {
+    font-size: 50px;
+    margin-left: 400px;
+    margin-top: 10px;
+  }
+  .work1-head {
+    margin-top: 50px;
+  }
+  .work1-shead {
+    margin-top: 50px;
+  }
+  .work1-cont {
+    margin-top: 50px;
+  }
+  .work1-mock1 {
+    margin-top: 50px;
+  }
+  .clr {
+    margin-left: 700px;
+    margin-top: -350px;
+  }
+  .w1-prim {
+    margin-top: -350px;
+    margin-left: 700px;
+  }
+  .w1-primt {
+    margin-left: 700px;
+    margin-top: -350px;
+  }
+  .w1-sect {
+    margin-left: 700px;
+    margin-top: -350px;
+  }
+  .w1-sec1 {
+    margin-left: 700px;
+    margin-top: -350px;
+  }
+  .w1-sec2 {
+    margin-left: 700px;
+    margin-top: -350px;
+  }
+  .typography {
+    margin-left: 1000px;
+    margin-top: -600px;
+  }
+  .font1 {
+    margin-left: 1000px;
+    margin-top: -600px;
+  }
+  .font2 {
+    margin-left: 1000px;
+    margin-top: -600px;
+  }
+  .small-figma {
+    margin-left: 1000px;
+    margin-top: -1550px;
+  }
+  .w1-figmafile {
+    margin-left: 1000px;
+    margin-top: -1550px;
+  }
+  .login-mock {
+    margin-top: -400px;
+  }
+  .mock-login {
+    margin-top: -400px;
+  }
+  .mock-homet {
+    margin-left: 200px;
+    margin-top: -695px;
+  }
+  .mock-home {
+    margin-left: 600px;
+    margin-top: -695px;
+  }
+  .mock-contactt1 {
+    margin-left: 990px;
+    margin-top: -990px;
+  }
+  .mock-contact {
+    margin-left: 980px;
+    margin-top: -980px;
+  }
+  .work2-head {
+    margin-top: -1000px;
+  }
+  .work2-shead {
+    margin-top: -1000px;
+  }
+  .work2-cont {
+    margin-top: -1000px;
+  }
+  .work2-mainimg {
+    margin-top: 1375px;
+  }
+  .clr2 {
+    margin-left: 700px;
+    margin-top: -1450px;
+  }
+  .w2-primt {
+    margin-left: 700px;
+    margin-top: -1440px;
+  }
+  .w2-prim {
+    margin-left: 700px;
+    margin-top: -1440px;
+  }
+  .w2-sect {
+    margin-left: 700px;
+    margin-top: -1440px;
+  }
+  .w2-sec1 {
+    margin-left: 700px;
+    margin-top: -1440px;
+  }
+  .w2-sec2 {
+    margin-top: -1440px;
+    margin-left: 700px;
+  }
+  .typography2 {
+    margin-left: 1000px;
+    margin-top: -1700px;
+  }
+  .font12 {
+    margin-left: 1000px;
+    margin-top: -1700px;
+  }
+  .font22 {
+    margin-left: 1000px;
+    margin-top: -1700px;
+  }
+  .font23 {
+    margin-top: -1700px;
+    margin-left: 1000px;
+  }
+  .small-figma2 {
+    margin-left: 1000px;
+    margin-top: -2350px;
+  }
+  .w2-figmafile {
+    margin-left: 1000px;
+    margin-top: -2350px;
+  }
+  .req {
+    margin-left: 700px;
+    margin-top: -2085px;
+  }
+  .req-cont {
+    margin-left: 700px;
+    margin-top: -2090px;
+  }
+  .mock-homet2 {
+    margin-left: -270px;
+    margin-top: -1395px;
+  }
+  .mock-home2 {
+    margin-left: 40px;
+    margin-top: -1345px;
+  }
+  .mock-logint2 {
+    margin-left: 500px;
+    margin-top: -1665px;
+  }
+  .mock-login2 {
+    margin-left: 350px;
+    margin-top: -1605px;
+  }
+  .work3-head {
+    margin-top: -1800px;
+  }
+  .work3-shead {
+    margin-top: -1800px;
+  }
+  .work3-cont {
+    margin-top: -1800px;
+  }
+  .work3-mainimg {
+    margin-top: -1800px;
+  }
+  .clr3 {
+    margin-left: 700px;
+    margin-top: -2300px;
+  }
+  .w3-primt {
+    margin-left: 700px;
+    margin-top: -2300px;
+  }
+  .w3-prim {
+    margin-left: 700px;
+    margin-top: -2300px;
+  }
+  .w3-sect {
+    margin-left: 700px;
+    margin-top: -2300px;
+  }
+  .w3-sec1 {
+    margin-left: 700px;
+    margin-top: -2300px;
+  }
+  .typography3 {
+    margin-left: 1000px;
+    margin-top: -2570px;
+  }
+  .font13 {
+    margin-left: 1000px;
+    margin-top: -2570px;
+  }
+  .font33 {
+    margin-left: 1000px;
+    margin-top: -2570px;
+  }
+  .small-figma3 {
+    margin-left: 1000px;
+    margin-top: -3100px;
+  }
+  .w3-figmafile {
+    margin-left: 1000px;
+    margin-top: -3100px;
+  }
+  .mock-homet3 {
+    margin-top: -2250px;
+    margin-left: -250px;
+  }
+  .mock-home3 {
+    margin-top: -2250px;
+    margin-left: 90px;
+  }
+  .mock-profilet3 {
+    margin-left: 500px;
+    margin-top: -2555px;
+  }
+  .mock-profile3 {
+    margin-left: 400px;
+    margin-top: -2500px;
+  }
+}

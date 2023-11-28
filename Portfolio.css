@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 50px;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  gap: 30px;
+}
+.nav-r1 {
+  display: none;
+}
+.nav-r2 {
+  display: none;
+}
+.nav-r3 {
+  display: none;
+}
+.navbar p {
+  font-family: "Bruno Ace SC", sans-serif;
+}
+/* .right p {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  transition: 1s all;
+  cursor: pointer;
+} */
+.right p:hover {
+  cursor: pointer;
+  transition: 200ms all;
+  border-bottom: 2px solid #000000 !important;
+}
+.menu-icon {
+  font-size: 20px;
+}
+.sidebar {
+  position: absolute;
+  width: 50%;
+  height: 212vh;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 5px 10px black;
+  z-index: 1;
+  margin-left: -500px;
+  transition: all 400ms;
+}
+.close-icon {
+  font-size: 20px;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.side-home {
+  text-decoration: none;
+  color: black;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+  /* text-decoration: underline !important; */
+}
+.side-uiux {
+  text-decoration: none;
+  color: black;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.side-contact {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: -190px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.container1 {
+  margin-top: 20px;
+  height: 250px;
+  position: relative;
+}
+.head-name {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Bruno Ace SC", sans-serif;
+  left: 20px;
+  top: 22px;
+}
+.head-uxui {
+  font-family: "Big Shoulders Inline Display", sans-serif;
+  font-size: 120px;
+  font-weight: 400;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+.head-designer {
+  font-size: 20px;
+  font-family: "Bruno Ace SC", sans-serif;
+  position: absolute;
+  left: 22px;
+  top: 170px;
+}
+.head-profile {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 230px;
+  top: 40px;
+}
+.container2 {
+  width: 100%;
+  height: 1631px;
+  background-color: #1f1f1f;
+  padding-top: 12px;
+}
+.container2-card1 {
+  width: 390px;
+  height: 500px;
+  margin-left: 12px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  margin-top: 50px;
+}
+.last-header {
+  font-size: 15px;
+  font-family: "Bruno Ace SC", sans-serif;
+  position: absolute;
+  left: 22px;
+  top: 205px;
+}
+.education {
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+.about-me {
+  color: white;
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 20px;
+  /* margin-top: 30px; */
+}
+.l1 {
+  font-family: "Amiko", sans-serif;
+  color: white;
+}
+.uiux {
+  text-decoration: underline;
+}
+.bcom {
+  text-decoration: underline;
+}
+.vhse {
+  text-decoration: underline;
+}
+.container2-card2 {
+  width: 390px;
+  height: 500px;
+  margin-left: 12px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  margin-top: 10px;
+}
+.container2-card3 {
+  width: 390px;
+  height: 500px;
+  margin-left: 12px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  margin-top: 10px;
+}
+.figma-logo {
+  height: 45px;
+  width: 45px;
+}
+.figma {
+  margin-left: 33px;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.figma1 {
+  font-family: "Amiko", sans-serif;
+  color: white;
+}
+.xd-logo {
+  height: 45px;
+  width: 45px;
+}
+.xd {
+  margin-left: 33px;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.xd1 {
+  font-family: "Amiko", sans-serif;
+  color: white;
+}
+.ps {
+  margin-left: 33px;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.ps1 {
+  font-family: "Amiko", sans-serif;
+  color: white;
+}
+.ps-logo {
+  height: 45px;
+  width: 45px;
+}
+.lr {
+  margin-left: 33px;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.lr1 {
+  font-family: "Amiko", sans-serif;
+  color: white;
+}
+.lr-logo {
+  height: 45px;
+  width: 45px;
+}
+.cv {
+  display: block;
+  height: 40px;
+  width: 150px;
+  border-radius: 15px;
+  font-weight: bolder;
+  margin-right: 20px;
+  border: none;
+}
+.c2-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cv-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.container3 {
+  position: relative;
+}
+.contact-prof {
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}
+.contact-name {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 210px;
+  margin-top: -120px;
+}
+.contact-uiux {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-top: 10px;
+  margin-left: 210px;
+}
+.whatsapp {
+  height: 50px;
+  width: 50px;
+  margin-top: 90px;
+  margin-left: 20px;
+}
+.number-text {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 90px;
+  margin-top: -50px;
+}
+.number {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 90px;
+  margin-top: 05px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.google {
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.google-text {
+  font-family: "Bruno Ace SC", sans-serif;
+  margin-left: 90px;
+  margin-top: -50px;
+}
+.email {
+  font-family: "Amiko", sans-serif;
+  margin-left: 90px;
+  margin-top: 05px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.drib-beha {
+  margin-top: 30px;
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+.beh-img {
+  height: 60px;
+  width: 60px;
+}
+.beh-text {
+  margin-top: 5px;
+}
+.drib-img {
+  height: 60px;
+  width: 60px;
+}
+.drib-text {
+  margin-top: 5px;
+}
+.drible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.behance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .nav-r1 {
+    display: block;
+  }
+  .nav-r2 {
+    display: block;
+  }
+  .nav-r3 {
+    display: block;
+  }
+  .head-profile {
+    margin-right: 100px;
+  }
+  .cont-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .container2-card1 {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .container2-card2 {
+    margin-top: 0;
+  }
+  .container2-card2 {
+    margin-top: 0;
+  }
+  .container2 {
+    height: 600px;
+  }
+  .contact-prof {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+  .contact-name {
+    margin-top: 20px;
+    margin-left: 55px;
+    display: block;
+  }
+  .contact-uiux {
+    margin-left: 60px;
+    display: block;
+  }
+  .whatsapp {
+    margin-left: 700px;
+    position: absolute;
+    top: 10px;
+  }
+  .number-text {
+    position: absolute;
+    /* top: 10px; */
+    margin-left: 770px;
+    margin-top: -275px;
+  }
+  .number {
+    margin-left: 770px;
+    margin-top: -255px;
+  }
+  .google {
+    margin-left: 700px;
+  }
+  .google-text {
+    margin-left: 770px;
+  }
+  .email {
+    margin-left: 770px;
+  }
+  .drib-beha {
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+}
